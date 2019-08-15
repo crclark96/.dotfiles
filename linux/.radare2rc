@@ -1,0 +1,5 @@
+eco cga
+e cfg.fortunes.type=tips,fun,nsfw,creepy
+e r2dec.theme=solarized
+e scr.utf8=true
+e scr.utf8.curvy=true
