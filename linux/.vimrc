@@ -20,7 +20,7 @@ set incsearch " search as characters are entered
 set hlsearch " highlight matches
 
 syntax on
-color dracula
+color elflord
 set smartindent
 set clipboard=unnamed " use os clipboard
 set shiftwidth=2 " number of spaces when shift indenting
@@ -56,3 +56,4 @@ au FileType c,cpp call LoadCAbbrevs()
 
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace on buffer write
 autocmd BufNewFile,BufRead *.cup,*.lex set syntax=java
+autocmd BufNewFile,BufRead *.l,*.y set syntax=c

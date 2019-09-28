@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export EDITOR='nvim'
+export EDITOR='vim'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -99,7 +99,6 @@ alias i3conf="$EDITOR ~/.config/i3/config"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias open="xdg-open"
 alias cat="bat"
-alias vim="nvim"
 alias ynab="wine $HOME/.wine/dosdevices/c:/Program\ Files\ \(x86\)/YNAB\ 4/ynab"
 alias apt="sudo apt"
 function cd() {
