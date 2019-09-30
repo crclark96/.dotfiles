@@ -106,6 +106,6 @@ function cd() {
         builtin cd $@ && ls -A
 }
 export CDPATH=".:$HOME/repos:$HOME/Dropbox/School"
-function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+function gi() { curl -sLw "\n" https://www.gitignore.io/api/$@ ;}
 export PATH="$PATH:$HOME/.bin/"
 export PATH="$PATH:$HOME/arduino-1.8.8/hardware/tools/avr/bin/"
