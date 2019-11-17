@@ -42,18 +42,6 @@ if has('nvim')
   " enter insert when in term
 endif
 
-" abbreviations for c programming
-func LoadCAbbrevs()
-    iabbr do do {<CR>} while ();<C-O>3h<C-O>
-    iabbr for for (;;) {<CR>}<C-O>k<C-O>3l<C-O>
-    iabbr switch switch () {<CR>}<C-O>k<C-O>6l<C-O>
-    iabbr while while () {<CR>}<C-O>k<C-O>5l<C-O>
-    iabbr if if () {<CR>}<C-O>k<C-O>2l<C-O>
-    iabbr #d #define
-    iabbr #i #include
-endfunc
-au FileType c,cpp call LoadCAbbrevs()
-
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace on buffer write
 autocmd BufNewFile,BufRead *.cup,*.lex set syntax=java
 autocmd BufNewFile,BufRead *.l,*.y set syntax=c
